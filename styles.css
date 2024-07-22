@@ -20,7 +20,7 @@ body {
     transform: translate(-50%, -50%);
     background: #000000d0;
     color: white;
-    padding: 2em;
+    padding: 1em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
@@ -29,6 +29,10 @@ body {
 #poem-container {
     padding: 20px; /* Increase padding to add more space */
         font-size: 14px;
+}
+#latin-container {
+        font-size: 17px;
+        color: rgb(157, 157, 157);
 }
 #title{
     height: 30px;
