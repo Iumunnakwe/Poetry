@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222; /* Fallback background color */
+    background-image: url('angel.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    font-size: 120%;
+    color: white;
+  }
+
+.poems-container {
+    position: absolute;
+    top: 50%; /* Adjust top position as needed */
+    left: 50%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%);
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    
+}
+#poem-container {
+    padding: 20px; /* Increase padding to add more space */
+        font-size: 14px;
+}
+#title{
+    height: 30px;
+    width: 50%;
+}
+
+h1 {
+    color: red;
+}
+button:hover {
+    background-color: hsla(0, 86%, 31%, 0.893);
+    border-style: none;
+    color: hsla(0, 0%, 20%, 0.4);
+    transform: 0.1s;
+  }
+  
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+   
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #7c7c7c2b;
+color: white;
+cursor: pointer;
+transition: 0.2s ease-in-out;
+}
+
+
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+    font-size: 70%;
+  }
+/* Style the container box 
+
+
+
+
+
+
+*/
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen */
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul p {
+    padding: 1px;
+    text-align: center;
+}
+
+
+
+.sidebar ul p:hover {
+    color: #e8491d;
+}
+
+.content {
+    margin-left: 250px; /* Same width as sidebar to leave space */
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.open-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1; /* Ensure button is above sidebar */
+}
+
+.open-btn:hover {
+    background-color: #555;
+}
