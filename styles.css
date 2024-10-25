@@ -141,3 +141,29 @@ transition: 0.2s ease-in-out;
 .open-btn:hover {
     background-color: #555;
 }
+
+@media (max-width: 768px) {
+    .poems-container {
+        width: 90%; /* Full width for mobile */
+        padding: 1em; /* Adjust padding as needed */
+        border-radius: 15px; /* Smaller border radius for mobile */
+    }
+
+    .sidebar {
+        width: 200px; /* Reduce sidebar width */
+    }
+
+    .content {
+        margin-left: 0; /* Remove margin for mobile */
+        padding: 10px; /* Reduce padding for mobile */
+    }
+
+    .open-btn {
+        top: 10px; /* Adjust button position */
+        left: 10px; /* Adjust button position */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button font size */
+    }
+}
